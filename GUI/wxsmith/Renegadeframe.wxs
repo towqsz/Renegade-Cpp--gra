@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="RenegadeFrame">
+		<size>493,148</size>
+		<id_arg>0</id_arg>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>Start</label>
+			<pos>304,72</pos>
+			<size>152,50</size>
+			<fg>wxSYS_COLOUR_HOTLIGHT</fg>
+			<bg>wxSYS_COLOUR_SCROLLBAR</bg>
+			<handler function="OnButton1Click1" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+			<value>Nazwa gracza</value>
+			<maxlength>20</maxlength>
+			<pos>16,24</pos>
+			<size>-1,-1</size>
+			<fg>wxSYS_COLOUR_WINDOW</fg>
+			<bg>wxSYS_COLOUR_ACTIVECAPTION</bg>
+			<handler function="OnTextCtrl1Text" entry="EVT_TEXT" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>Easy</label>
+			<pos>352,32</pos>
+			<size>40,21</size>
+			<font>
+				<size>13</size>
+				<family>roman</family>
+			</font>
+		</object>
+		<object class="wxSpinButton" name="ID_SPINBUTTON1" variable="SpinButton1" member="yes">
+			<max>1</max>
+			<pos>400,32</pos>
+			<size>24,24</size>
+			<handler function="OnSpinButton1Change1" entry="EVT_SPIN" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>Wybierz poziom:</label>
+			<pos>344,8</pos>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
